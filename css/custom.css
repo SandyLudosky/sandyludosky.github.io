@@ -95,7 +95,7 @@ a:hover.twitter span{
 
 #inner {
         top:0;
-        background:rgba(0,0,0,0.9);
+        background:rgba(52, 73, 94,.8);
         height: 300px; 
         padding-top: 7%;
         display: none;    
@@ -108,12 +108,12 @@ a:hover.twitter span{
     padding: 2%;
     margin: 0 auto;
     width: 60%;
-    color: #ccc;
-    border: 17px solid #ccc;
+    color: #ecf0f1;
+    border: 17px solid #ecf0f1;
 }
 
 #bottom {
-  background:rgba(0,0,0,0.6);
+/*  background:rgba(155, 89, 182,.6);*/
   display: none;
 }
 
@@ -126,15 +126,15 @@ a:hover.twitter span{
 }
 
 .socials i {
-  color: #eee;
+  color: #222;
 }
 
 h1 small {
-   color: #fff; 
+   color: #ecf0f1; 
 }
 
 #work {
-	background: rgba(60,221,185,1);
+	background: #34495e;
   padding: 20px 0 0 0;
 }
 
