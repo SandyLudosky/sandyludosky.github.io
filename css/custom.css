@@ -95,7 +95,7 @@ a:hover.twitter span{
 
 #inner {
         top:0;
-        background:rgba(0,0,2,0.9);
+        background:rgba(0,0,0,0.9);
         height: 300px; 
         padding-top: 7%;
         display: none;    
@@ -113,7 +113,7 @@ a:hover.twitter span{
 }
 
 #bottom {
-    background:rgba(34,34,2,0.9);
+  background:rgba(0,0,0,0.6);
   display: none;
 }
 
@@ -135,7 +135,7 @@ h1 small {
 
 #work {
 	background: rgba(60,221,185,1);
-  padding: 10px 0;
+  padding: 20px 0 0 0;
 }
 
 
