@@ -1,9 +1,389 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-</head>
+	<title>Creating Diamond Grid with CSS3</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/reset.css" rel="stylesheet"> 
+	<link href="css/foundation.css" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/normalize.css">	
+	<link href="css/style.css" rel="stylesheet"> 
+	<link href="css/flat-ui.css" rel="stylesheet"> 
+	<link href="css/animate.css" rel="stylesheet"> 	
+	<link href="css/icons.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<style type="text/css">
+		/*here goes random bg image*/
+	</style>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	 <script src="modernizr.js"></script>
+	
+	</head>
 <body>
-<h1>My Page</h1>
 
-</body>
-</html>
+
+<div class="fixed">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#" id='name'>SL</a></h1>
+
+    </li>
+
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+
+  	<ul class="right">
+	<li><a href="" class='facebook'><span></span>Facebook</a></li>  
+    <li><a href=""class='twitter'><span></span>Twitter</a></li>
+    <li><a href=""class='twitter'><span></span>LinkedIn</a></li>
+    <li><a href=""class='twitter'><span></span>Github</a></li>
+  	</ul>
+    <!-- Right Nav Section -->
+
+
+    <!-- Left Nav Section -->
+
+  </section>
+</nav>
+	
+
+</div> <!-- fixed -->
+
+
+<div id="welcome">
+
+	<div id="inner" class='text-center animated fadeInDown'>
+
+		<h1>Sandy Ludosky<br><span>Front-End Web Developer</span><br><small class='secondary'>sandyludosky@gmail.com</small></h1>
+		<br><br>
+
+			<div><a href="#work" class='btn btn-warning btn-large'>See Portfolio</a></div>
+	</div>
+
+	<div id="bottom" class='text-center animated fadeInUp'>
+		<div class="row">
+
+			<div class="medium-12 medium-offset-1 socials">
+				<ul class='inline-list'>
+					<li><a href="" target='_blank'><i class="fa fa-facebook-square fa-4x"></a></i></li>
+
+					<li><a href="" target='_blank'><i class="fa fa-twitter-square fa-4x"></i></a></li>
+					<li><a href="" target='_blank'><i class="fa fa-linkedin-square fa-4x"></i></a></li>
+					<li data-tooltip class="has-tip tip-bottom" title="Download Resume"><a href="" target='_blank'><i class="fa fa-file-pdf-o fa-4x"></i></a></li>
+
+					<li><a href="" target='_blank'><i class="fa fa-github-square fa-4x"></i></a></li>
+				
+					<li data-tooltip class="has-tip tip-bottom" title="Send Message"><a href="" target='_blank'><i class="fa fa-envelope fa-4x" data-reveal-id="email"></i></a></li>
+				</ul>
+			</div>
+		</div>
+			<div id="email" class="reveal-modal tiny" data-reveal>
+			<h2>Shoot me an email!</h2>
+
+			<form>
+			  <div class="row">
+			    <div class="large-10 columns">
+			      <label>Name
+			        <input type="text" placeholder="Name" />
+			      </label>
+			    </div>
+			  </div>
+
+			  <div class="row">
+			    <div class="large-10 columns">
+			      <label>Email
+			        <input type="email" placeholder="Email" />
+			      </label>
+			    </div>
+			  </div>
+
+			  
+			<div class="row">
+			    <div class="large-10 columns">
+			      <label>Subject
+			        <input type="text" placeholder="Subject" />
+			      </label>
+			    </div>
+			  </div>
+
+			  <div class="row">
+			    <div class="large-10 columns">
+			      <label>Subject
+			        <textarea placeholder="message" rows='3' cols='30' /></textarea>
+			      </label>
+			    </div>
+			  </div><br>
+
+
+			   <div class="row">
+			    <div class="large-10 columns">
+			      <input tupt='submit' class='button secondary tiny round expand' value='send'>
+			    </div>
+			  </div>
+
+			  </form>
+			  <a class="close-reveal-modal">&#215;</a>
+	 </div>
+	</div>
+
+
+	
+</div>
+
+
+<div id="work">
+<h1>Works</h1>
+
+	<ul class="diamond-grid">
+
+		<li>
+			<a href="http://afternoon-bayou-6468.herokuapp.com/" target="_blank" class="diamond">
+				<div class="text">
+				 Photogur<br>
+				 Web Application
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+
+		
+		</li>
+		<li>
+			<a href="http://fathomless-meadow-7268.herokuapp.com/" target="_blank" class="diamond">
+				<div class="text">
+				 Blog<br>
+				 Web Application
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+
+		
+		</li>
+		<li>
+			<a href="https://dashboard.heroku.com/apps/tictacyo/resources" target="_blank" class="diamond">
+				<div class="text">
+				TIC TAC YO<br>
+				 Web Application
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+
+		
+		</li>
+		<li>
+			<a href="http://crowdfunderr.herokuapp.com/" target="_blank" class="diamond">
+				<div class="text">
+				Crowdfunder<br>
+				 Web Application
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+		
+			<li>
+			<a href="http://www.1stwebdesigner.com/" target="_blank" class="diamond">
+				<div class="text">
+				Table<br>
+				 Website
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.1stwebdesigner.com/" target="_blank" class="diamond">
+				<div class="text">
+				Combo communication<br>
+				 Website
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.1stwebdesigner.com/" target="_blank" class="diamond">
+				<div class="text">
+				Cupcake Toronto<br>
+				 Website
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.1stwebdesigner.com/" target="_blank" class="diamond">
+				<div class="text">
+				Yonge & Eligible<br>
+				 Website
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.1stwebdesigner.com/" target="_blank" class="diamond">
+				<div class="text">
+				HealthyLadyDaily.com<br>
+				 Website (WordPress)
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.1stwebdesigner.com/" target="_blank" class="diamond">
+				<div class="text">
+				Aquarium<br>
+				 Website (WordPress)
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="http://www.1stwebdesigner.com/" target="_blank" class="diamond">
+				<div class="text">
+					Shine Bright like a Diamond
+				</div>
+				<div class='diamond_hover'>
+					<img src="http://lorempixel.com/160/160/business/1/">		
+				</div>
+
+				<div class='mask'>
+					<span>LEARN MORE</span>
+				</div>
+			</a>
+		</li>
+
+
+		<a href="#" id='top' class='btn btn-success' >Top</a>
+	</ul>
+
+
+</div>
+
+
+<!-- <div id="contact">
+
+
+</div>
+ -->
+
+<script type="text/javascript" src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+<script type="text/javascript" src='js/animate.js'></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	//random bg image
+	var numRand = Math.floor(Math.random()*5)
+	$('style').html("body.f-topbar-fixed {background: url('img/"+ numRand +".png');}")
+
+	//setting height equal to window's height
+	var height = $(window).height();
+	var height_2 = height *  60/100
+	var height_3 = height *  31/100
+
+	$('#welcome').css('height', height);
+	$('#work').css('height', height);
+
+	$('#inner').css('height', height_2);
+	$('#bottom').css('height', height_3);
+	// $('#contact').css('height', height);
+
+
+
+    $('.diamond').on('mouseenter', function(){
+    	console.log('hover');
+
+    	$(this).find('.diamond_hover').fadeIn('slow');
+    	$(this).find('.mask').fadeIn('slow');
+
+    });
+
+     $('.diamond').on('mouseleave', function(){
+    	console.log('leave');
+    	$(this).find('.diamond_hover').fadeOut('slow');
+    	$(this).find('.mask').fadeOut('slow');
+
+    });
+
+
+     setInterval(function() {
+     	$('#inner').fadeIn()
+	}, 1000);
+
+     setInterval(function() {
+     	$('#bottom').fadeIn()
+	}, 1500);
+
+
+
+});
+</script>
+
+ <script src="js/foundation.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+	</body>
+	</html>
