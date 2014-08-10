@@ -122,11 +122,11 @@ h1 small {
   overflow: hidden;
   position: relative;
   text-decoration: none;
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
   -webkit-transition: color .35s linear;
   -moz-transition: color .35s linear;
   -o-transition: color .35s linear;
