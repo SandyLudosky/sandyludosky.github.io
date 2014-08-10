@@ -126,7 +126,7 @@ a:hover.twitter span{
 }
 
 .socials i {
-  color: #222;
+  color: #2980b9;
 }
 
 h1 small {
@@ -134,7 +134,7 @@ h1 small {
 }
 
 #work {
-	background: #34495e;
+	background:rgba(52, 73, 94,.8);
   padding: 20px 0 0 0;
 }
 
