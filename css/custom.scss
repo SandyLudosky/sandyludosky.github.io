@@ -70,6 +70,11 @@ i.resume {
 }
 
 
+.fi-social-github.large {
+  font-size: 40px;
+  color:#4a66a0; 
+}
+
 
 .top-bar-section {
     
@@ -117,6 +122,13 @@ i.resume {
       color: #ecf0f1;
       border: 17px solid #ecf0f1;  
     }
+}
+
+
+#bottom {
+  color: #ecf0f1;
+  padding: 7% 15% 5% 15%;
+  display: none;
 }
 
 .socials {
@@ -176,11 +188,11 @@ h1 small {
     overflow: hidden;
     position: relative;
     text-decoration: none;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform:rotate(270deg);
+    transform: rotate(270deg);
     -webkit-transition: color .35s linear;
     -moz-transition: color .35s linear;
     -o-transition: color .35s linear;
@@ -205,10 +217,6 @@ h1 small {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
-    -webkit-transition: color .35s linear;
-    -moz-transition: color .35s linear;
-    -o-transition: color .35s linear;
-    transition: color .35s linear;
     position: absolute;
     top: 0;
     left:0;
@@ -231,5 +239,7 @@ h1 small {
     }
 }
 
-
+.reveal-modal a.button {
+  margin: 18px 0 0 -10px;
+}
 

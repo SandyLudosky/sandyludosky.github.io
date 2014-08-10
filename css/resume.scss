@@ -1,0 +1,59 @@
+@import url("reset.css");
+@import url("normalize.css");
+@import url("foundation.css");
+@import url("foundation-icons.css");
+@import url("animate.css");
+
+$padding: 20px;
+$belize: #2980b9;
+$cloud: #ecf0f1;
+$grey : #666;
+
+body {
+	background: rgba(236, 240, 241,.6);
+	font-size: 10px;
+}
+.padding {
+	padding: $padding;
+}
+
+.container {
+	box-shadow: 1px 1px 10px #ccc;
+}
+
+.header {
+	i {
+		color: $belize;
+	}
+}
+.skills {
+
+
+	ul {
+		margin-left: 0;
+		font-size: 14px;
+	}
+}
+
+.projects {
+	margin-top: 10px;
+	padding-left: 0;
+ 
+	i {
+		font-size: 40px;
+		color: #222;
+	}
+}
+
+.belize {
+	color:$belize;
+}
+.grey {
+	color: $grey;
+}
+
+.belize_bg {
+	background: rgba(41, 128, 185,.7);
+	padding: 2px 5px;
+	color: $cloud;
+}
