@@ -2,7 +2,6 @@
 @import url("normalize.css");
 @import url("foundation.css");
 @import url("foundation-icons.css");
-@import url("icons.css");
 
 /*style for the diamond grid in #work section */
 @import url("style.css");
@@ -14,22 +13,60 @@ body.f-topbar-fixed {
     background-attachment: fixed;
   }
 
-
 .top-bar-section li:not(.has-form) a:not(.button) {
     background: none;
+    padding: 2px 10px;
 }
 
-/*#home {	
-	padding: 10px;
+ .fixed nav {
+  bottom:0;
+  }
 
-}*/
+a#name, 
+.name span {
+  color: #222;
+  text-decoration: none;
+}
+
 .top-bar {
-  background: #eee;
+  background: #fff;
+  padding: 10px 0;
 
    ul {
-    background: #eee;
+    background: #fff;
     padding-right: 205px;
   }
+
+
+  .icon {
+    margin: 0 auto;
+  }
+}
+
+
+
+i.fb {
+  color: #4a66a0;
+}
+
+i.hover {
+  display: none;
+}
+
+i.twitter {
+  color: #19B1E8;      
+}
+i.github {
+  color: #333;     
+}
+i.linkedin {
+  color: #1B86BC;  
+}
+i.mail{
+  color: #666;  
+}
+i.resume {
+  color: #c0392b;
 }
 
 
@@ -37,20 +74,23 @@ body.f-topbar-fixed {
 .top-bar-section {
     
     li {
-      margin-right: 12px;
-      width: 5rem;
-    }
-
-    &:not(.has-form) a:not(.button):hover {
-      background: #eee;
+      margin: 0 15px;
+/*      width: 5rem;*/
+        &:hover > a:not(.button) {
+          background: #fff;
+        }
     }
 }
 
+ .top-bar-section li:not(.has-form) a:not(.button):hover,
+ .hover:hover {
+        background: #fff; 
+        color: #222;
+  }
 
-.top-bar-section li:hover a {
-    color: #f5d313!important;
-    text-decoration: none;
 
+.top-bar-section ul li > a {
+  color: #222;
 }
 
 
@@ -69,6 +109,7 @@ body.f-topbar-fixed {
     h1  {
       font-size: 2.0rem;
       letter-spacing: 4px;
+      font-family: 'Indie Flower', cursive;
       margin: 0;
       padding: 2%;
       margin: 0 auto;
@@ -78,22 +119,12 @@ body.f-topbar-fixed {
     }
 }
 
-
-
-#bottom {
-/*  background:rgba(155, 89, 182,.6);*/
-  display: none;
-}
-
 .socials {
   margin-top: 5%;
+  display:none;
 
    li {
     margin: 0 4.4%;
-   }
-
-   i {
-    color: #2980b9;
    }
 }
 

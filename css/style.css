@@ -27,7 +27,6 @@ Author: Samuel Dalusung
 
 /* DIAMOND GRIDS STYLES
 -------------------------------------------------*/
-
 .diamond-grid {
     width: 1000px;
     margin: 0 auto;
@@ -42,7 +41,7 @@ Author: Samuel Dalusung
     margin-top: 20px;
 }
 
-.diamond {
+.diamond { 
     height: 160px;
     width: 160px;
     background: transparent;
@@ -61,6 +60,7 @@ Author: Samuel Dalusung
     -moz-transition: color .35s linear;
     -o-transition: color .35s linear;
     transition: color .35s linear;
+    transition: all .5s;
 }
 
 /*.diamond:hover {

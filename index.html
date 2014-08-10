@@ -11,7 +11,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	 <script src="modernizr.js"></script>
+	 <script src="js/modernizr.js"></script>
 	
 	</head>
 <body>
@@ -21,7 +21,7 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
     <li class="name">
-      <h1><a href="#" id='name'>SL</a></h1>
+      <h1><a href="#" id='name'>{SL} <span></span></a></h1>
 
     </li>
 
@@ -31,11 +31,17 @@
 
   <section class="top-bar-section">
 
-  	<ul class="right">
-	<li><a href="" class='facebook'><span></span>Facebook</a></li>  
-    <li><a href=""class='twitter'><span></span>Twitter</a></li>
-    <li><a href=""class='twitter'><span></span>LinkedIn</a></li>
-    <li><a href=""class='twitter'><span></span>Github</a></li>
+  	<ul class="right icon">
+		<li><a href="https://www.facebook.com/SandyLudosky.WebDev" target='_blank'><i class="fa fa-facebook-square fa-3x fb"></a></i></li>
+
+		<li><a href="https://twitter.com/San10Ludosky" target='_blank'><i class="fa fa-twitter-square fa-3x twitter"></i></a></li>
+		<li><a href="/ca.linkedin.com/in/sandyludosky/" target='_blank'><i class="fa fa-linkedin-square fa-3x linkedin"></i></a></li>
+		<li data-tooltip class="has-tip tip-bottom" title="Download Resume"><a href="" target='_blank'><i class="fa fa-file-pdf-o fa-3x resume"></i></a></li>
+
+		<li><a href="https://github.com/SandyLudosky?tab=repositories" target='_blank'><i class="fa fa-github-square fa-3x github"></i></a></li>
+
+		<li data-tooltip class="has-tip tip-bottom" title="Send Message"><a href="" target='_blank'><i class="fa fa-envelope fa-3x mail" data-reveal-id="email"></i></a></li>
+					
   	</ul>
     <!-- Right Nav Section -->
 
@@ -58,73 +64,6 @@
 
 			<div><a href="#work" class='btn btn-warning btn-large'>See Portfolio</a></div>
 	</div>
-
-	<div id="bottom" class='text-center animated fadeInUp'>
-		<div class="row">
-
-			<div class="medium-12 medium-offset-1 socials">
-				<ul class='inline-list'>
-					<li><a href="https://www.facebook.com/SandyLudosky.WebDev" target='_blank'><i class="fa fa-facebook-square fa-4x"></a></i></li>
-
-					<li><a href="https://twitter.com/San10Ludosky" target='_blank'><i class="fa fa-twitter-square fa-4x"></i></a></li>
-					<li><a href="/ca.linkedin.com/in/sandyludosky/" target='_blank'><i class="fa fa-linkedin-square fa-4x"></i></a></li>
-					<li data-tooltip class="has-tip tip-bottom" title="Download Resume"><a href="" target='_blank'><i class="fa fa-file-pdf-o fa-4x"></i></a></li>
-
-					<li><a href="https://github.com/SandyLudosky?tab=repositories" target='_blank'><i class="fa fa-github-square fa-4x"></i></a></li>
-				
-					<li data-tooltip class="has-tip tip-bottom" title="Send Message"><a href="" target='_blank'><i class="fa fa-envelope fa-4x" data-reveal-id="email"></i></a></li>
-				</ul>
-			</div>
-		</div>
-			<div id="email" class="reveal-modal tiny" data-reveal>
-			<h2>Shoot me an email!</h2>
-
-			<form>
-			  <div class="row">
-			    <div class="large-10 columns">
-			      <label>Name
-			        <input type="text" placeholder="Name" />
-			      </label>
-			    </div>
-			  </div>
-
-			  <div class="row">
-			    <div class="large-10 columns">
-			      <label>Email
-			        <input type="email" placeholder="Email" />
-			      </label>
-			    </div>
-			  </div>
-
-			  
-			<div class="row">
-			    <div class="large-10 columns">
-			      <label>Subject
-			        <input type="text" placeholder="Subject" />
-			      </label>
-			    </div>
-			  </div>
-
-			  <div class="row">
-			    <div class="large-10 columns">
-			      <label>Subject
-			        <textarea placeholder="message" rows='3' cols='30' /></textarea>
-			      </label>
-			    </div>
-			  </div><br>
-
-
-			   <div class="row">
-			    <div class="large-10 columns">
-			      <input tupt='submit' class='button secondary tiny round expand' value='send'>
-			    </div>
-			  </div>
-
-			  </form>
-			  <a class="close-reveal-modal">&#215;</a>
-	 </div>
-	</div>
-	
 </div>
 
 
@@ -161,7 +100,7 @@
 				</ul>
 		
 
-				<a class='button tiny success right round' href="http://afternoon-bayou-6468.herokuapp.com/"><i class='fi-eye'></i> Visit Site</a>
+				<a class='button tiny success right round' href="http://photogurawesome.herokuapp.com/"><i class='fi-eye'></i> Visit Site</a>
 				<a class="close-reveal-modal">&#215;</a>
 
 			</div>
@@ -191,7 +130,7 @@
 					<li>- Ajax</li>
 				</ul>
 
-				<a class='button tiny success round' href="http://fathomless-meadow-7268.herokuapp.com/"><i class='fi-eye'></i> Visit Site</a>
+				<a class='button tiny success round' href="http://blogsample.herokuapp.com/"><i class='fi-eye'></i> Visit Site</a>
 				<a class="close-reveal-modal">&#215;</a>
 
 			</div>
@@ -488,14 +427,13 @@ $(document).ready(function() {
 
 	//setting height equal to window's height
 	var height = $(window).height();
-	var height_2 = height *  60/100
+	var height_65 = height - 65
 	var height_3 = height *  31/100
 
 	$('#welcome').css('height', height);
 	$('#work').css('height', height);
+	$('#inner').css('height', height_65);
 
-	$('#inner').css('height', height_2);
-	$('#bottom').css('height', height_3);
 	// $('#contact').css('height', height);
 
 
@@ -515,7 +453,6 @@ $(document).ready(function() {
 
     });
 
-
      setInterval(function() {
      	$('#inner').fadeIn()
 	}, 1000);
@@ -523,7 +460,6 @@ $(document).ready(function() {
      setInterval(function() {
      	$('#bottom').fadeIn()
 	}, 1500);
-
 
 
 });
