@@ -1,6 +1,12 @@
-/*body {
-    font-family: "helvetica", sans-serif!important;
-}*/
+@import url("reset.css");
+@import url("normalize.css");
+@import url("foundation.css");
+@import url("foundation-icons.css");
+@import url("icons.css");
+/*style for the diamond grid in #work section */
+@import url("style.css");
+@import url("flat-ui.css");
+@import url("animate.css");
 body.f-topbar-fixed {
   padding: 0;
   background-attachment: fixed; }
@@ -23,41 +29,6 @@ body.f-topbar-fixed {
   width: 5rem; }
 .top-bar-section:not(.has-form) a:not(.button):hover {
   background: #eee; }
-
-.facebook span {
-  float: right;
-  padding: 0 !important;
-  width: 16px;
-  height: 16px;
-  margin: 15px 0 0 0;
-  background: url(../img/icons/img_fb.png) left -16px no-repeat;
-  text-indent: -10000px;
-  transition: all .5s;
-  -o-transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s; }
-
-a:hover.facebook span {
-  background: url(../img/icons/img_fb.png) left top no-repeat;
-  color: #f5d313; }
-
-.twitter span {
-  float: right;
-  padding: 0 !important;
-  width: 16px;
-  height: 16px;
-  margin: 15px 0 0 0;
-  background: url(../img/icons/img_twitter.png) left -16px no-repeat;
-  text-indent: -10000px;
-  transition: all .5s;
-  -o-transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s; }
-
-a:hover.twitter span {
-  background: url(../img/icons/img_twitter.png) left top no-repeat; }
 
 .top-bar-section li:hover a {
   color: #f5d313 !important;
