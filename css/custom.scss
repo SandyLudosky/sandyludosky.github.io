@@ -1,0 +1,238 @@
+/*body {
+    font-family: "helvetica", sans-serif!important;
+}*/
+
+body.f-topbar-fixed {
+    padding: 0;
+    background-attachment: fixed;
+  }
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+}
+
+/*#home {	
+	padding: 10px;
+
+}*/
+.top-bar {
+  background: #eee;
+
+   ul {
+    background: #eee;
+    padding-right: 205px;
+  }
+}
+
+
+
+.top-bar-section {
+    
+    li {
+      margin-right: 12px;
+      width: 5rem;
+    }
+
+    &:not(.has-form) a:not(.button):hover {
+      background: #eee;
+    }
+}
+
+
+
+
+
+.facebook span {
+      float: right;
+      padding: 0!important;
+      width: 16px;
+      height: 16px;
+      margin: 15px 0 0 0;
+      background: url(../img/icons/img_fb.png) left -16px no-repeat;
+      text-indent: -10000px;  
+      transition: all .5s;
+      -o-transition: all .5s;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+}
+
+a:hover.facebook span{
+  background: url(../img/icons/img_fb.png) left top no-repeat;
+  color: #f5d313;
+}
+
+.twitter span {
+      float: right;
+      padding: 0!important;
+      width: 16px;
+      height: 16px;
+      margin: 15px 0 0 0;
+      background: url(../img/icons/img_twitter.png) left -16px no-repeat;
+      text-indent: -10000px;  
+      transition: all .5s;
+      -o-transition: all .5s;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+}
+
+a:hover.twitter span{
+  background: url(../img/icons/img_twitter.png) left top no-repeat;
+}
+
+.top-bar-section li:hover a {
+    color: #f5d313!important;
+    text-decoration: none;
+
+}
+
+
+#welcome {
+    padding: 0;
+    position: relative;   
+}
+
+#inner {
+        top:0;
+        background:rgba(52, 73, 94,.8);
+        height: 300px; 
+        padding-top: 7%;
+        display: none;  
+
+    h1  {
+      font-size: 2.0rem;
+      letter-spacing: 4px;
+      margin: 0;
+      padding: 2%;
+      margin: 0 auto;
+      width: 60%;
+      color: #ecf0f1;
+      border: 17px solid #ecf0f1;  
+    }
+}
+
+
+
+#bottom {
+/*  background:rgba(155, 89, 182,.6);*/
+  display: none;
+}
+
+.socials {
+  margin-top: 5%;
+
+   li {
+    margin: 0 4.4%;
+   }
+
+   i {
+    color: #2980b9;
+   }
+}
+
+
+
+
+
+h1 small {
+   color: #ecf0f1; 
+}
+
+#work {  
+	background:rgba(52, 73, 94,1);
+  padding: 20px 0 0 0;
+
+  .text {
+    font-weight: 900;
+
+     span {
+      font-family: 'Indie Flower', cursive;
+
+        &.app {
+          color: #27ae60;
+        }
+
+        &.website {
+          color: #f39c12;
+        }
+     }
+  } 
+}
+
+
+
+
+#top {
+	position: absolute;
+	top:400px;
+	right: 0;
+}
+
+
+.diamond_hover {
+	  height: 160px;
+    width: 160px;
+    color: #fff; 
+    font-weight: bold;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: color .35s linear;
+    -moz-transition: color .35s linear;
+    -o-transition: color .35s linear;
+    transition: color .35s linear;
+    position: absolute;
+    top: 0;
+    left:0;
+    display:none;
+
+     img {
+      z-index: -1;
+    }
+
+}
+
+.mask {
+    height: 160px;
+    width: 160px; 
+    background-color: rgba(0,0,0,.5);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: color .35s linear;
+    -moz-transition: color .35s linear;
+    -o-transition: color .35s linear;
+    transition: color .35s linear;
+    position: absolute;
+    top: 0;
+    left:0;
+    display:none;
+    z-index: 9999;
+
+    span {
+      position: absolute;
+      font-size: 1.1rem;
+      border-radius: 4px;
+      color: #fff;
+      padding: 2%;
+      bottom:47%;
+      left:7%;
+     -webkit-transform: rotate(315deg);
+      -moz-transform: rotate(315deg);
+      -ms-transform: rotate(315deg);
+      -o-transform:rotate(315deg);
+      transform:  rotate(315deg);
+    }
+}
+
+
+
