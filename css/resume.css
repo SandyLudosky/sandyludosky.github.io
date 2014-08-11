@@ -22,6 +22,9 @@ p {
 .header li {
   list-style-type: none; }
 
+p.lead {
+  font-size: 20px; }
+
 .skills ul {
   margin-left: 0;
   font-size: 14px; }
