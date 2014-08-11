@@ -12,6 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	 <script src="js/modernizr.js"></script>
 	
 	</head>
@@ -33,15 +34,11 @@
   <section class="top-bar-section">
 
   	<ul class="right icon">
-		<li><a href="https://www.facebook.com/SandyLudosky.WebDev" target='_blank'><i class="fa fa-facebook-square fa-3x fb"></a></i></li>
-
-		<li><a href="https://twitter.com/San10Ludosky" target='_blank'><i class="fa fa-twitter-square fa-3x twitter"></i></a></li>
-		<li><a href="/ca.linkedin.com/in/sandyludosky/" target='_blank'><i class="fa fa-linkedin-square fa-3x linkedin"></i></a></li>
+  		<li><a href="/ca.linkedin.com/in/sandyludosky/" target='_blank'><i class="fa fa-linkedin-square fa-3x linkedin"></i></a></li>
+  		<li><a href="https://github.com/SandyLudosky?tab=repositories" target='_blank'><i class="fa fa-github-square fa-3x github"></i></a></li>
+  		<li><a href="https://twitter.com/San10Ludosky" target='_blank'><i class="fa fa-twitter-square fa-3x twitter"></i></a></li>
+		<li><a href="https://www.facebook.com/SandyLudosky.WebDev" target='_blank'><i class="fa fa-facebook-square fa-3x fb"></a></i></li>			
 		<li data-tooltip class="has-tip tip-bottom" title="Download Resume"><a href="resume.html" target='_blank'><i class="fa fa-file-pdf-o fa-3x resume"></i></a></li>
-
-		<li><a href="https://github.com/SandyLudosky?tab=repositories" target='_blank'><i class="fa fa-github-square fa-3x github"></i></a></li>
-
-		<li data-tooltip class="has-tip tip-bottom" title="Send Message"><a href="" target='_blank'><i class="fa fa-envelope fa-3x mail" data-reveal-id="email"></i></a></li>
 					
   	</ul>
     <!-- Right Nav Section -->
@@ -66,8 +63,7 @@
 			<div><a href="#work" class='btn btn-warning btn-large'>See Portfolio</a></div>
 
 		<div id="bottom">
-			<p>Hi! Welcome to My Site.
-				My name is Sandy and I am a Front End Developer. <br>
+			<p>Hi! My name is Sandy and I am a Front End Developer. <br>
 				Check out my portfolio below.
 				<br>If you want to get in touch, drop me an email at <strong class='secondary'>sandyludosky@gmail.com</strong></p>
 		</div>
@@ -434,55 +430,9 @@
 
 <script type="text/javascript" src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
 <script type="text/javascript" src='js/animate.js'></script>
-<script type="text/javascript">
-
-$(document).ready(function() {
-
-	//random bg image
-	var numRand = Math.floor(Math.random()*5)
-	$('style').html("body.f-topbar-fixed {background: url('img/"+ numRand +".png');}")
-
-	//setting height equal to window's height
-	var height = $(window).height();
-	var height_65 = height - 65
-	var height_3 = height *  31/100
-
-	$('#welcome').css('height', height);
-	$('#work').css('height', height);
-	$('#inner').css('height', height_65);
-
-	// $('#contact').css('height', height);
-
-
-
-    $('.diamond').on('mouseenter', function(){
-    	console.log('hover');
-
-    	$(this).find('.diamond_hover').fadeIn('slow');
-    	$(this).find('.mask').fadeIn('slow');
-
-    });
-
-     $('.diamond').on('mouseleave', function(){
-    	console.log('leave');
-    	$(this).find('.diamond_hover').fadeOut('slow');
-    	$(this).find('.mask').fadeOut('slow');
-
-    });
-
-     setInterval(function() {
-     	$('#inner').fadeIn()
-	}, 1000);
-
-     setInterval(function() {
-     	$('#bottom').fadeIn()
-	}, 2000);
-
-
-});
-</script>
 
  <script src="js/foundation.min.js"></script>
+  <script src="js/scripts.js"></script>
   <script src="js/scroll.js"></script>
   <script>
     $(document).foundation();

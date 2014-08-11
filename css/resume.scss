@@ -7,11 +7,14 @@
 $padding: 20px;
 $belize: #2980b9;
 $cloud: #ecf0f1;
-$grey : #666;
+$grey : #333;
 
 body {
 	background: rgba(236, 240, 241,.6);
-	font-size: 10px;
+}
+
+p {
+	font-size: 14px;
 }
 .padding {
 	padding: $padding;
@@ -22,8 +25,10 @@ body {
 }
 
 .header {
+
 	i {
 		color: $belize;
+
 	}
 }
 .skills {
@@ -47,9 +52,14 @@ body {
 
 .belize {
 	color:$belize;
+	border-bottom: 1px solid lighten($belize,45%);
 }
 .grey {
 	color: $grey;
+}
+
+.panel {
+	border: 1px solid lighten($belize,45%);
 }
 
 .belize_bg {
