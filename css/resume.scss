@@ -3,6 +3,7 @@
 @import url("foundation.css");
 @import url("foundation-icons.css");
 @import url("animate.css");
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
 
 $padding: 20px;
 $belize: #2980b9;
@@ -11,6 +12,7 @@ $grey : #333;
 
 body {
 	background: rgba(236, 240, 241,.6);
+	font-family: 'Comfortaa', cursive;
 }
 
 p {
@@ -30,13 +32,32 @@ p {
 		color: $belize;
 
 	}
+
+	li {
+		list-style-type: none;
+	}
 }
+
 .skills {
 
+	ul {
+		margin-left: 0;		
+		font-size: 14px;
+	}
+
+}
+
+.experience {
+	strong {
+		font-weight: bold;
+	}
 
 	ul {
-		margin-left: 0;
+		margin-left: 0;		
 		font-size: 14px;
+	}
+	div {
+		padding-left: 0;
 	}
 }
 
@@ -46,13 +67,29 @@ p {
  
 	i {
 		font-size: 40px;
-		color: #222;
+		color: #666;
+		transition: all .5s;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		-o-transition: all .5s;
+
+			&:hover  {
+				color: #222;
+			}
+	}
+
+	i.notavailable {
+		color: #eee;
+	}
+
+	table thead tr th {
+		text-align: center;
 	}
 }
 
+
 .belize {
 	color:$belize;
-	border-bottom: 1px solid lighten($belize,45%);
 }
 .grey {
 	color: $grey;
@@ -60,6 +97,7 @@ p {
 
 .panel {
 	border: 1px solid lighten($belize,45%);
+	padding: 8% 5%;
 }
 
 .belize_bg {

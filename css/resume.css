@@ -3,8 +3,10 @@
 @import url("foundation.css");
 @import url("foundation-icons.css");
 @import url("animate.css");
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
 body {
-  background: rgba(236, 240, 241, 0.6); }
+  background: rgba(236, 240, 241, 0.6);
+  font-family: 'Comfortaa', cursive; }
 
 p {
   font-size: 14px; }
@@ -17,27 +19,47 @@ p {
 
 .header i {
   color: #2980b9; }
+.header li {
+  list-style-type: none; }
 
 .skills ul {
   margin-left: 0;
   font-size: 14px; }
+
+.experience strong {
+  font-weight: bold; }
+.experience ul {
+  margin-left: 0;
+  font-size: 14px; }
+.experience div {
+  padding-left: 0; }
 
 .projects {
   margin-top: 10px;
   padding-left: 0; }
   .projects i {
     font-size: 40px;
-    color: #222; }
+    color: #666;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s; }
+    .projects i:hover {
+      color: #222; }
+  .projects i.notavailable {
+    color: #eee; }
+  .projects table thead tr th {
+    text-align: center; }
 
 .belize {
-  color: #2980b9;
-  border-bottom: 1px solid #d2e7f5; }
+  color: #2980b9; }
 
 .grey {
   color: #333333; }
 
 .panel {
-  border: 1px solid #d2e7f5; }
+  border: 1px solid #d2e7f5;
+  padding: 8% 5%; }
 
 .belize_bg {
   background: rgba(41, 128, 185, 0.7);
