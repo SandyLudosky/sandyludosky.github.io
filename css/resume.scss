@@ -39,7 +39,29 @@ p {
 }
 
 p.lead {
-	font-size: 20px;
+	font-size: 16px;
+	padding: 1% 2%;
+	margin-top: 2.5%;
+	font-style: italic;
+}
+
+
+
+.education {
+
+
+	ul {
+		margin:0;
+
+			li {
+				margin: 3% 0;
+				
+			}
+	}
+
+	span {
+		font-size: 14px;
+	}
 }
 .skills {
 
@@ -114,7 +136,7 @@ p.lead {
 
 .panel {
 	border: 1px solid lighten($belize,45%);
-	padding: 8% 5%;
+	padding: 2%;
 }
 
 .belize_bg {
