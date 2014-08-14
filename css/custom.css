@@ -76,8 +76,7 @@ i.resume {
 
 #inner {
   top: 0;
-  background: rgba(52, 73, 94, 0.8);
-  height: 300px;
+  background: rgba(52, 73, 94, 0.7);
   padding-top: 7%;
   display: none; }
   #inner h1 {
@@ -92,11 +91,15 @@ i.resume {
     border: 10px solid #ecf0f1; }
 
 #bottom {
+  background: rgba(52, 73, 94, 0.9);
   color: #ecf0f1;
-  padding: 7% 15% 5% 15%;
   display: none; }
-  #bottom.p {
-    font-size: 20px; }
+  #bottom p {
+    width: 90%;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 2% 0;
+    text-align: center; }
 
 #bottom a {
   color: #f1c40f; }
