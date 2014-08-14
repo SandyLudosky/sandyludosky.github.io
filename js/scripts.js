@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	//random bg image
-	var numRand = Math.floor(Math.random()*7)
+	var numRand = Math.floor(Math.random()*8)
 	$('style').html("body.f-topbar-fixed {background: url('img/"+ numRand +".png');background-size: cover;}")
 
 	//setting height equal to window's height
