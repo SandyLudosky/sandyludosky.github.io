@@ -9,6 +9,8 @@ $(document).ready(function() {
 	var height_3 = height*60/100  
 	var height_1 = (height*30/100)
 
+
+    $('.container,.container_overlay').css('height', height);
 	$('#welcome').css('height', height);
     $('#inner').css('height', height_3);
     $('#bottom').css('height', height_1);
