@@ -4,7 +4,7 @@
 	  // to use the window height
 	 var height = $(window).height();
 	 var width = $(window).width();
-   $('#home').css('height', height);
+   $('#home, #contact').css('height', height);
 
    $('.portfolio-item').on('mouseenter', function(){
           $(this).find('.item_title').fadeIn('slow');
