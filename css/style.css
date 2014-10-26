@@ -209,7 +209,7 @@ hr.star:after {
 #work {
   background:#fff;
   color:#222;
-  padding: 90px 0;
+  padding: 140px 0; 
 }
 
 #work img {
@@ -267,7 +267,7 @@ hr.star:after {
 
 /*Contact section*/
  section#contact {
-	padding: 100px 0; 
+	padding: 140px 0; 
  }
 
   section#contact li {
