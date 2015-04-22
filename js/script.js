@@ -4,6 +4,10 @@
 	  // to use the window height
 	 var height = $(window).height();
 	 var width = $(window).width();
+   var window_height = (height*3)+250;
+
+    console.log(window_height);
+
    $('#home, #contact').css('height', height);
 
    $('.portfolio-item').on('mouseenter', function(){
@@ -14,15 +18,13 @@
           $(this).find('.item_title').fadeOut('slow');
   
    });
+
+    $('#udemy').css('top',window_height);	
 	
-	
-  
+ 
 	   
 	   
-	   //random bg image
-	 var numRand = Math.floor(Math.random()*9)
-	
-	 $('style').html("section#display{background: url(images/"+ numRand +".jpg);background-size: cover;}")
+	 
 	
 	
   $(window).scroll(function () {    

@@ -275,6 +275,8 @@ hr.star:after {
   display: inline-block;
   list-style-type: none;    
   }
+
+ 
    
 /*Social media icons - COLORS  */
 
@@ -355,6 +357,23 @@ hr.star:after {
     section#contact li:hover  .social-roll.resume {
     background: url(../images/icons/color/file.png);
     }
+
+
+/* udemy logo */
+ #udemy {
+    position: absolute;
+    right: 30px;
+  }
+
+
+  #udemy a {
+    opacity: .8;
+    transition: .5s;
+  }
+
+   #udemy a:hover {
+    opacity:1;
+  }
 
 
   footer {
