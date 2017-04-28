@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+ <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/pure.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <title>MyTodoApp</title>
+
+</head>
+<body  ng-controller="TodoController as todo">
+
+<!-- localstorage: http://codepen.io/octowombat/pen/eyngH -->
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <h2 class="pure-menu-heading" href="">My todos <small>({{todos.length}})</small></h2>
+
+      
+    </div>
+</div>
+
+<!-- http://angular-ui.github.io/bootstrap/#/popover -->
+<!-- http://mgcrea.github.io/angular-strap/ -->
+
+<!--
+TUTORIAL: http://www.sitepoint.com/building-list-jquery-local-storage/ -->
+
+        <div class="container">
+        <br>
+		
+          <!-- Todos input -->
+          <form role="form" ng-submit="addTodo()">
+            <div class="row" ng-class="{'has-error': todo.item.placeholder}">
+              <div class="input-group">
+                <input type="text" ng-model="newTodo" placeholder="What needs to be done" class="form-control form-control-lg input-lg">
+                <span class="input-group-btn">
+                  <input type="submit" class="btn btn-primary  btn-lg" value="Add">
+                </span>
+              </div>
+            </div>
+          </form><br>
+
+          <p class="text-danger lead" ng-show="todo.item.placeholder">Please add todo <span ng-show"todo.item.date_placeholder">and a date</span></p>
+          <div class="pull-right">Date: <input type="text" id="datepicker" class='input-lg'></div>
+        
+          <br><br><br><br>
+
+         
+            
+            <button class="pure-button archive_btn" ng-click="archive()"> Archive task(s) complete</button> <span>{{todo.item.remaining}}</span>
+
+
+             <div class="form-group clearfix" id="example">
+                 <ul id="sortable" class="pure-menu-list todo" ng-repeat="todo in todos">
+                    <li class="todo-{{todo.complete}} animated fadeIn">
+
+                    	<button ng-click="removeTodo($index)" aria-label="Remove" class="delete pure-button button-error button-small">X</button>
+
+                    	<span class='text'>{{todo.name}}</span>
+
+                    	<span ng-show="todo.due" class="due label label-danger">DUE</span> <input class="pull-right form-control done" type="checkbox" ng-model="todo.complete">
+
+                    </li>
+               </ul>
+
+            <div>
+            <br><br>
+            
+
+            <div>
+
+                <h1 ng-show="!todo" class="text-center" style="opacity: 0.7">Your TODO list is empty</h1>
+            </div>
+        </div>
+        
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+
+<script type="text/javascript" src='http://code.jquery.com/ui/1.11.4/jquery-ui.min.js'></script>
+
+<script type="text/javascript" src='js/script.js'></script>
+
+<script type="text/javascript">
+
+$( "#datepicker" ).datepicker();
+
+</script>
+</body>
+</html>

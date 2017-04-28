@@ -1,0 +1,227 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com/ 
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/** basic layout **/
+
+html, body {
+	height: 100%;
+}
+
+#page-wrap {
+	min-height: 100%;
+	margin-bottom: -90px; 
+}
+
+#page-wrap:after {
+	content: "";
+	display: block;
+	height: 90px; 
+}
+
+.brand {
+	position: relative;
+	color: #fff !important;
+	padding-left: 30px !important;
+}
+
+.brand:before {
+	position: absolute;
+	content: '';
+	left: 5px;
+	top: 10px;
+	bottom: auto;
+	height: 19px;
+	width: 17px;
+	background: url("../images/arrow.png") no-repeat;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.brand:hover:before {
+	left: 0;
+}
+
+#social-wrapper {
+	padding: 10px 0 0;
+}
+
+#main {
+	padding-top: 70px;
+}
+
+footer {
+	/*padding: 30px 0;*/
+	background-color: #F5F5F5;
+    border-top: 1px solid #E5E5E5;
+}
+
+.page-header h1 {
+    text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+}
+
+.jm-mainpage {
+	padding: 30px 0;
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+.jm-mainpage-box {
+	font-size: 13px;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.jm-mainpage-box > h3 {
+    text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/** tutorial **/
+
+.jm-item {
+	padding: 10px;
+	display: inline-block;
+	text-align: left;
+}
+
+.jm-item-wrapper {
+	position: relative;
+
+}
+
+.jm-item-image {
+	position: relative;
+	overflow: hidden;
+	border:1px solid grey;
+	border-radius: 10px;
+}
+
+.jm-item-image img {
+	display: block;
+}
+
+.jm-item-title {
+	position: absolute;
+	left: -10px;
+	bottom: 17px;
+	background: #2980b9;
+    color: #FFFFFF;
+    font-size: 1.4em;
+	line-height: 1.5em;
+    font-weight: normal;
+    padding: 7px 9px 6px;
+    text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+.jm-item-overlay {
+	background: #000;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity 0.5s ease-in 0s;
+	-moz-transition: opacity 0.2s ease-in 0s;
+	-o-transition: opacity 0.5s ease-in 0s;
+	transition: opacity 0.5s ease-in 0s;
+}
+
+.jm-item-wrapper:hover .jm-item-overlay {
+	opacity: 0.3;
+}
+
+.jm-item-button {
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+}
+
+.jm-item-button a {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background: #2980b9;
+    text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.2em;
+	line-height: 50px;
+	-webkit-transition: all 0.2s ease-in 0s;
+	-moz-transition: all 0.2s ease-in 0s;
+	-o-transition: all 0.2s ease-in 0s;
+	transition: all 0.2s ease-in 0s;
+	text-decoration: none !important;
+	display: block;
+}
+
+.jm-item-button a:hover {
+	background: #3b3b3b;	
+}
+
+/** first **/
+
+.first .jm-item-button {
+	/* here you can control transition speed */
+	-webkit-transition: all 0.2s ease-in 0.5s;
+	-moz-transition: all 0.2s ease-in 0.5s;
+	-o-transition: all 0.2s ease-in 0.5s;
+	transition: all 0.2s ease-in 0.5s;
+	top: -50px;	
+}
+
+.first .jm-item-wrapper:hover .jm-item-button {
+	top: 20%;	
+}
+
+/** second **/
+
+.second {
+	overflow: hidden;
+}
+
+.second .jm-item-wrapper .jm-item-title {
+	-webkit-transition: all 0.2s ease-in 0s;
+	-moz-transition: all 0.2s ease-in 0s;
+	-o-transition: all 0.2s ease-in 0s;
+	transition: all 0.2s ease-in 0s;
+}
+
+.second .jm-item-wrapper:hover .jm-item-title {
+	left: -100%;
+}
+
+.second .jm-item-description {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
+	background: rgba(52, 152, 219,.4);
+	color: #fff;
+	padding-top: 70px;
+	top: -100%;
+	border-radius: 10px;
+	-webkit-transition: all 0.5s ease-in 0s;
+	-moz-transition: all 0.5s ease-in 0s;
+	-o-transition: all 0.5s ease-in 0s;
+	transition: all 0.5s ease-in 0s;
+}
+
+.second .jm-item-wrapper:hover .jm-item-description {
+	top: 0;
+}

@@ -1,0 +1,457 @@
+   <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Boostrap Portfolio</title>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+       <!-- Font Awesome CDN-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+       
+      <!-- Custom -->
+      <link rel="stylesheet" href="css/style.css">
+      </head>
+
+
+    <!-- Add Scrollspy attributes inside body tag -->
+    <body data-spy="scroll" data-target="#menu">
+
+    <!-- navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src='images/bootstrap-logo.png' alt="bootstrap logo"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="menu">      
+            <ul class="nav navbar-nav navbar-right text-center">
+              <li class="active"><a href="#banner">Home</a></li>
+              <li><a href="#services">Services</a></li> 
+              <li><a href="#projects">Projects</a></li>      
+            </ul>
+        </div>
+
+      </div><!-- container-fluid -->
+    </nav>
+
+
+<section id="banner">
+
+  <div class="container-fluid">
+
+      <!-- Add Jumbotron here and place headings inside -->
+
+      <div class="jumbotron text-center">
+        <h1 class='font80 hidden-xs'>John Doe</h1> 
+        <h2 class='font70 hidden-xs'>Developer &amp; Designer</h2>
+
+        <h1 class='visible-xs'>John Doe</h1> 
+        <h2 class='visible-xs'>Developer &amp; Designer</h2>
+
+
+        <p><a class="btn btn-warning btn-lg" href="#" data-toggle="modal" data-target="#contactMe" role="button">Contact Me</a></p>
+      </div>
+
+  </div><!-- container-fluid -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactMe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title" id="myModalLabel">Stay in Touch!</h2>
+        </div>
+
+        <div class="modal-body">
+          
+          <form>
+            <div class="form-group">
+              <label for="sender-name" class="control-label">Name:</label>
+              <input type="text" class="form-control input-lg" id="sender-name">
+            </div>
+
+            <div class="form-group">
+              <label for="sender-email" class="control-label">Email:</label>
+              <input type="text" class="form-control input-lg" id="sender-email">
+            </div>
+
+
+            <div class="form-group">
+              <label for="message-text" class="control-label">Message:</label>
+              <textarea rows='5' class="form-control" id="message-text" aria-describedby="helpBlock"></textarea>
+
+              <!-- Add Help Text here -->
+              <span id="helpBlock" class="help-block">250 characters maximum</span>
+            </div>
+
+          </form>
+
+        </div><!-- modal-body -->
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default">Send</button>
+        </div><!-- modal-footer -->
+
+       
+        <div class="modal-footer">
+
+           <!-- Inline list here -->
+           <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+
+               <li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+
+              <li><a href="#"><i class="fa fa-github fa-3x"></i></a></li>
+            </ul>
+    
+         </div><!-- modal-footer-->
+    
+      </div>
+    </div>
+
+  </div><!-- modal -->
+
+</section><!-- banner -->
+
+
+<section id="services" class="text-center">
+
+  <div class="container">
+    <div class='row'>
+
+      <h1 class='font60 hidden-xs'>Services</h1>
+      <h1 class='visible-xs'>Services</h1>
+      <br>
+
+      <!-- Add columns here -->
+      <div class="col-md-4">
+          <p><i class="fa fa-desktop fa-4x"></i></p>         
+          <h3>Beautiful &amp; Web Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        </div>
+
+         <div class="col-md-4">
+          <p><i class="fa fa-mobile fa-4x"></i></p>
+          <h3>Responsive Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        </div>
+
+        <div class="col-md-4">
+          <p><i class="fa fa-pencil fa-4x"></i></p>
+          <h3>UX Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        </div>
+       
+    </div>
+   </div><!-- .container -->
+
+</section><!-- services -->
+
+
+<section id="projects" class="text-center">
+
+  <div class="container">
+
+      
+    <h1 class="font60 hidden-xs">Projects</h1>
+    <h1 class="visible-xs">Projects</h1>
+    <br>
+
+
+    <div class='row'>
+
+       
+       <!-- Add columns here -->
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Project 1 - created in 2014" src="images/projects/web-template.png" alt='image'>
+          </a>          
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Designed with Bootstrap" src="images/projects/web-template2.png" alt='image'>
+          </a>          
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Add text" src="images/projects/web-template3.png" alt='image'>
+          </a> 
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Add text"  src="images/projects/web-template4.png" alt='image'>
+          </a>          
+        </div>
+    
+    </div><!-- row -->
+
+    
+    <div class="margin"></div>
+
+
+    <!-- Add another row and columns here -->
+     <div class='row hidden-xs'>
+
+       
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Add text"  src="images/projects/web-template5.png" alt='image'>
+          </a>          
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Add text"  src="images/projects/web-template6.png" alt='image'>
+          </a>          
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Add text"  src="images/projects/web-template7.png" alt='image'>
+          </a> 
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <a href="#" class="thumbnail">
+            <img data-toggle="tooltip" data-placement="bottom" title="Add text"  src="images/projects/web-template8.png" alt='image'>
+          </a>          
+        </div>
+
+      </div>
+
+  </div><!-- container -->
+
+</section><!-- projects -->
+
+
+<section id='testimonials' class='text-center'>
+
+  <!-- container including carousel.js is hidden on x-small screens -->
+  <div class='container hidden-xs'>
+
+    <h1 class='font60'>What Customers Say!</h1><br>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause="hover" data-interval="10000">
+    
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        
+        <div class="item active">
+         
+          <div class="container">
+
+            <div class="row">
+
+              <div class='col-md-8 col-md-offset-2'>
+
+                <div class="media">
+
+                  <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object img-circle" src="images/testimonials/male-client.png" alt="image">
+                    </a>
+                  </div>
+
+                  <div class="media-body">
+                    <h4 class="media-heading">Customer Name, City</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  </div>
+
+                </div><!-- media -->
+
+              </div>
+
+            </div><!-- row -->
+         </div><!-- container -->
+
+        </div><!-- slide item -->
+
+        <div class="item">
+         
+          <div class="container">
+
+            <div class="row">
+
+              <div class='col-md-8 col-md-offset-2'>
+
+                <div class="media">
+
+                  <div class="media-body">
+                    <h4 class="media-heading">Customer Name, City</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  </div>
+
+                  <!-- float right, media image must be placed below media-body -->
+                  <div class="media-right media-middle">
+                    <a href="#">
+                      <img class="media-object img-circle" src="images/testimonials/female-client.png" alt="image">
+                    </a>
+                  </div>
+
+                </div><!-- media -->
+
+              </div>
+
+            </div><!-- row -->
+         </div><!-- container -->
+
+        </div><!-- slide-item --> 
+
+        <div class="item">
+         
+          <div class="container">
+
+            <div class="row">
+
+              <div class='col-md-8 col-md-offset-2'>
+
+                <div class="media">
+
+                   <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object img-circle" src="images/testimonials/male-client2.png" alt="image">
+                    </a>
+                  </div>
+
+                  <div class="media-body">
+                    <h4 class="media-heading">Customer Name, City</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  </div>
+
+                </div><!-- media -->
+
+              </div>
+
+            </div><!-- row -->
+         </div><!-- container -->
+
+        </div><!-- slide-item --> 
+      </div>
+      <!-- End Wrapper for slides -->
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!-- End Controls -->
+
+    </div><!-- carousel -->
+
+  </div><!-- container-->
+
+
+  <!-- add another container here - visible on x-small only -->
+  <div class="container text-center visible-xs">
+
+        <h1>What Customers Say!</h1><br>
+
+        <div class="media">
+
+          <div class="media-body text-center">
+            <h4 class="media-heading">Customer Name, City</h4>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          </div>
+
+          <!-- float right, media image must be placed below media-body -->
+          <div class="media-right media-middle hidden-xs">
+            <a href="#">
+              <img class="media-object img-circle" src="images/testimonials/female-client3.png" alt="image">
+            </a>
+          </div>
+
+        </div>
+
+  </div><!-- container -->
+
+</section><!-- testimonials -->
+
+
+<footer>
+    
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 text-left">
+        <p>Copyright &copy; &ndash; All Right Reserved 2015</p>
+      </div>
+
+      <div class="col-md-6  text-right">
+        <p>Designed with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> with <span class="label label-primary">Bootstrap (v3.3.5)</span></p>
+      </div>
+    
+    </div>
+  </div>
+
+</footer>
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+
+      
+      <script type="text/javascript">
+
+        //Additional script required for Tooltip.js
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        });
+
+      </script>
+    </body>
+  </html>

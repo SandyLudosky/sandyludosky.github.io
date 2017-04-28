@@ -1,0 +1,220 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+
+body {
+    margin: 0;
+    padding: 0;
+     background-color: brown;
+    width: 100%;
+    background: #eab92d;
+    background: -moz-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(57%, #eab92d), color-stop(99%, #c79810));
+    background: -webkit-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
+    background: -o-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
+    background: -ms-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);
+    background: radial-gradient(ellipse at center, #eab92d 57%, #c79810 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eab92d', endColorstr='#c79810', GradientType=1);
+
+}
+
+
+div.note {
+    height: 175px;
+    width: 175px;
+    margin: 2px 0;
+    position: absolute;
+    cursor: -webkit-grab;
+}
+
+div.note:active {
+    cursor: -webkit-grabbing;
+}
+
+div.note p {
+   /* font-size: 22px;*/
+    padding: 5px;
+    font-family: "Shadows Into Light", Arial;
+}
+
+div.note:hover > span {
+    opacity: 1;
+}
+
+div.note > span {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity .25s linear;
+}
+
+div.note button {
+    margin: 2px;
+}
+
+div.note > textarea {
+    height: 75%;
+    background: rgba(255, 255, 255, .5);
+}
+
+.glyphicon-plus {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+body,
+html,
+div.board,
+div#react-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+div.note {
+    height: 175px;
+    width: 175px;
+    margin: 2px 0;
+    position: absolute;
+    cursor: -webkit-grab;
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+}
+
+div.note > div {
+    position: relative;
+}
+
+div.note:active {
+    cursor: -webkit-grabbing;
+}
+
+div.note p {
+    font-size: 22px;
+    padding: 5px;
+    font-family: "Shadows Into Light", Arial;
+}
+
+div.note:hover > span {
+    opacity: 1;
+}
+
+div.note > span {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity .25s linear;
+}
+
+div.note button {
+    margin: 2px;
+}
+
+div.note > textarea {
+    height: 75%;
+    background: rgba(255, 255, 255, .5);
+}
+
+.glyphicon-plus {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.remove {
+    border: 1px solid #fff;
+    background: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    position: absolute;
+    opacity: 0;
+    top: -10px;
+    right: -10px;   
+    transition: .5s;
+}
+
+.note:hover .remove,
+.remove:hover {
+    opacity: 1;
+}
+
+#editor {
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    width: 100%;
+    padding: 5px 0 5px;
+ 
+}
+
+#editor ul {
+    margin: 0;
+    padding: 0 5px 0 0;
+}
+
+#editor li {
+    display: inline-block;
+
+}
+
+select {
+    margin-left: 5px;
+
+}
+.colorPalette button {
+    border-radius: 5px;
+    border: none;
+    width: 14px;
+    height: 14px;
+}
+
+.yellow {
+   background: yellow;
+}
+.emerald {
+    background: #2ecc71;
+}
+.lightBlue {
+    background: #3498db;
+}
+.amethyste {
+    background: #9b59b6;
+}
+.sunflower {
+    background: #f1c40f;
+}
+.turquoise {
+    background: #1abc9c;
+}
+.alizarin {
+    background: #e74c3c;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font16 {
+    font-size: 18px;
+}
+
+.font18 {
+    font-size: 20px;
+}
+
+.right {
+    float: right;
+    margin-right: 5px;
+}
+.clear {
+    clear: both;
+}

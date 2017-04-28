@@ -1,0 +1,108 @@
+body {
+	padding-top: 50px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.margin {
+  margin: 20px 0;
+}
+
+#banner, 
+#services,
+#projects, 
+#testimonials  {
+	padding: 60px 0 80px 0;	
+}
+
+#services, 
+#testimonials {
+  background-color: #ecf0f1;
+}
+
+.font80 {
+	font-size: 80px!important;
+}
+
+.font70 {
+	font-size: 70px!important;
+}
+
+.font60 {
+	font-size: 60px!important;
+}
+
+/* == Add your custom style here ==*/
+
+/* navigation */
+
+.navbar-default .navbar-brand, 
+.navbar {
+   font-size: 20px;
+   color: #3498db;
+}
+
+.navbar li{
+	width: 20rem;
+}
+
+/* banner - modal */
+
+#banner {
+/*background: #3498db;*/
+background: url("../images/background/bg-1.jpg");
+background-size: cover;
+}
+
+.jumbotron {
+ background: transparent;
+ color: #ecf0f1;
+}
+
+.modal-content {
+	padding: 20px 0;
+}
+
+/* services */
+
+/* Custom color for Font Awesome icons */
+#services i {
+  color: #3498db;
+}
+
+
+/* testimonials - carousel */
+
+/* removes the default shadow of controls */
+.carousel-control.right, 
+.carousel-control.left {
+	background: transparent;
+}
+
+/* footer */
+
+footer {
+	padding: 10px 0;
+	background-color: #7f8c8d;
+	color: #ecf0f1;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+/* Custom styling for smaller screens */
+	
+	.navbar li {
+		width: 100%;
+	}
+
+	footer p {
+		text-align: left;
+		margin: 3px 0;
+	}
+}
+}
+
