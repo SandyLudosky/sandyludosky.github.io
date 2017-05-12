@@ -1,0 +1,223 @@
+/*!
+ * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
+ * Custom Styling
+ */
+
+@import "bootstrap/sass/bootstrap";
+
+
+/*
+  Color Variables
+ */
+$blue: #D4E3FF;
+$light-blue: #F0F2FF;
+$navy-blue:  #011422;
+$padding: 20px;
+
+
+body {
+	padding-top: 78px;
+	font-family: "Arial", Georgia, Serif;
+}
+
+
+%links {
+	list-style-type:none;
+		li {
+			margin: 10px 0;
+			text-transform: uppercase;
+		}
+}
+
+.bold {
+	font-weight: 700;
+}
+.hero {
+	
+	height:300px;
+	background: url('../img/on-the-road.jpg')  no-repeat fixed center;
+
+	h1 {
+		padding-top: 150px;
+		color: white;
+		font-weight: 700;
+	}
+}
+/*
+  Main Navigation
+ */
+
+.navbar {
+	padding: $padding;
+	background: $light-blue!important;
+	color:  $navy-blue!important;
+
+	ul.navbar-nav {
+		li {
+			width: 150px;
+			a {
+				color: $navy-blue;
+				font-size: 15px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.navbar-nav {
+		.nav-link,
+		.active>.nav-link, 
+		.nav-link.open, 
+		.nav-link.active { 
+			color: $navy-blue!important;
+		}
+	}
+
+	.navbar-inverse.navbar-brand, 
+	.navbar-inverse.navbar-toggler {
+		color: $navy-blue!important;
+	}
+
+	.navbar-brand {
+		color: $navy-blue!important;
+	}
+}
+
+ /*
+  Sidebar
+ */
+
+ .sidebar-nav {
+ 	padding-top: 40px;
+ 	background: $light-blue;
+
+ 	ul {
+ 		@extend %links;
+ 		li {
+ 			font-weight: 700;
+ 		}
+ 	}
+ }
+
+
+ /*
+  Main
+ */
+
+
+ .about {
+ 	margin:40px 0 60px 0;
+ }
+
+ .services {
+ 	h4 {
+ 		margin-top:10px;
+ 		font-weight: 900;
+ 	}
+ }
+
+/*
+  Bottom - Footer
+ */
+
+.bottom {
+	background: $navy-blue;
+	color: $light-blue!important;
+	padding: 20px 0;
+
+	.footer-links {
+ 		ul {
+			@extend %links;
+		}
+ 	}
+
+ 	.footer-links, 
+ 	.contact-us, 
+ 	.newsletter {
+ 		margin: 15px 0;
+ 	}
+ }
+ .contact-us {
+ 	ul {
+		@extend %links;
+		padding-left:0;
+		
+		li {
+			text-transform: lowercase!important;
+		}
+	}
+
+ }
+
+ footer {
+	background: $blue;
+	padding: 10px 0;
+}
+
+
+@include media-breakpoint-up(sm) { 
+	.navbar {	
+		.navbar-inverse .navbar-toggler {
+			color: $navy-blue;
+		}
+
+		.nav {
+			margin-left:60%;
+		}
+
+		i, 
+		.navbar-inverse .navbar-brand, 
+		.navbar-inverse .navbar-toggler {
+			color: $navy-blue!important;
+		}
+	}
+ }
+
+
+@include media-breakpoint-up(sm) { 
+	.navbar {	
+
+		.navbar-nav {
+			margin-left:30%;
+		}
+	}
+ }
+
+
+@media (max-width: 575px) {
+	.hero {
+
+		height:100px;
+		h1 {
+			font-size: 15px;
+			padding-top: 50px;
+		}
+	}
+
+	.no-margin {
+		margin:0;
+	}
+
+	.navbar {	
+		i, 
+		.navbar-inverse .navbar-brand, 
+		.navbar-inverse .navbar-toggler {
+			color: $navy-blue!important;
+		}
+	}
+
+	
+
+	.bottom {
+
+		.footer-links {
+			ul {
+				padding-left: 0;	
+			}	
+		}
+
+		.spacing {
+			margin: 10px 0;
+		}
+	}
+}
+

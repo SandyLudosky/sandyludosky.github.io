@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="bigmove">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Big Move</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap core CSS  + custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script type="text/javascript" src=
+  "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+  </script>
+
+    <script type="text/javascript" src="js/main.js">
+  </script>
+
+  </head>
+
+  <body ng-controller="Controller as items">
+
+   
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand" href="#">BIG MOVE</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">SERVICES</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link disabled" href="#">NEWS</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link disabled" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </nav>
+
+    <!-- Hero/ Banner  -->
+
+      <div class="container hero">
+	
+        <h1 class="display-4 text-center">Services</h1>
+     
+      </div>
+   
+
+    <div class="container">
+
+
+      <div class="row">
+      		
+      	<div class="col-md-3 sidebar-nav hidden-xs-down">
+      		
+      		<ul ng-repeat=
+            "item in items.sidebarlinks">
+      			<li>{{item}}</li>
+      		</ul>
+
+      	</div>
+
+      	<div class="col-md-9 col-xs-12">
+      		 <!-- main -->
+
+      		 <div class="row about">
+
+      		 	<div class="col-md-12">
+      		 		<h2>WHAT WE DO</h2>
+	      		 	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      		 	</div>
+      		 </div>
+
+		      <div class="row services">
+		        <div class="col-md-4" ng-repeat=
+            "item in items.services">
+		          <img ng-src="{{item.img}}" alt="{{item.heading}}" class="img-fluid">
+		          <h4>{{item.heading}}</h4>
+		          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus</p>  
+		        </div>
+		      </div>
+      	</div>
+
+
+      </div>
+      <!-- sidebar -->
+  
+    </div> <!-- /container -->
+ <div class="bottom">
+      	<div class="container">
+
+	      	<div class="row">
+	      		
+	      		<div class="col-md-3 footer-links">
+	      			<ul ng-repeat=
+            "item in items.footerlinks">
+	      				<li>{{item}}</li>
+	      			</ul>
+	      		</div>
+
+	      		<div class="col-md-5 contact-us">
+	      			<h4>CONTACT US</h4>
+	      			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	      			</p>
+
+	      			<ul>
+	      				<li><span class="bold">Email:</span> hello@company.com</li>
+	      				<li><span class="bold">Phone:</span> + 375 (29) 543-76-49, + 375 (29) 543-76-49</li>
+	      				<li><span class="bold">Mail:</span> 20 Lorem Ipsum do sit amet, <br />6046 Larsinac, Country</li>
+	      			</ul>
+	      		</div>
+
+	     
+	      		<div class="col-md-4 newsletter">
+	      			<h4>NEWSLETTER</h4>
+	      			<p>Lorem ipsum dolor sit amet, consectetur.
+	      			</p>
+
+			      	<form>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email address</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					  </div>
+					 
+					  
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+	      			
+	      		</div>
+	      	</div>
+	    </div>
+  </div>
+
+
+  <footer>
+    <p class="text-center">Company &copy; All Rights Reserved</p>
+  </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+ 
+   
+    <script type="text/javascript">
+
+
+    </script>
+  </body>
+</html>
