@@ -1,0 +1,334 @@
+@import"https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap";* {
+    box-sizing: border-box
+}
+
+:root {
+    font-size: 62.5%;
+    --white: #fff;
+    --gray-100: #f4f4f4;
+    --gray-200: #ccc;
+    --gray-800: #222;
+    --primary: #0033b4;
+    --primary-font: "Nunito",sans-serif
+}
+
+:root,body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    color: var(--gray-800);
+    width: 100%;
+    line-height: 2.6rem
+}
+
+main {
+    margin: 3rem 0
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 1rem;
+    line-height: 2.8rem
+}
+
+@media(min-width: 700px) {
+    h1,h2,h3,h4,h5,h6 {
+        line-height:4rem
+    }
+}
+
+h1 {
+    font-size: 3.5rem
+}
+
+@media(min-width: 700px) {
+    h1 {
+        font-size:4rem
+    }
+}
+
+h2 {
+    font-size: 3rem
+}
+
+@media(min-width: 700px) {
+    h2 {
+        font-size:3.5rem
+    }
+}
+
+h3 {
+    font-size: 2.4rem
+}
+
+@media(min-width: 700px) {
+    h3 {
+        font-size:2.8rem
+    }
+}
+
+h4 {
+    font-size: 1.8rem
+}
+
+@media(min-width: 700px) {
+    h4 {
+        font-size:2.4rem
+    }
+}
+
+h5 {
+    font-size: 1.8rem
+}
+
+@media(min-width: 700px) {
+    h5 {
+        font-size:2rem
+    }
+}
+
+h6 {
+    font-size: 1.4rem
+}
+
+@media(min-width: 700px) {
+    h6 {
+        font-size:1.6rem
+    }
+}
+
+.container {
+    height: calc(100vh - 60rem);
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem
+}
+
+.container-fluid {
+    margin-top: 20rem;
+}
+
+p {
+    margin: 0 0 2rem
+}
+
+a {
+    color: var(--gray-800);
+    text-decoration: none
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 2rem
+}
+
+pre {
+    background-color: var(--gray-800);
+    color: var(--white);
+    padding: .5rem;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 1rem
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.hero {
+    padding: 3rem 0;
+    margin-bottom: 3rem
+}
+
+@media(min-width: 700px) {
+    .hero {
+        padding:6rem 0;
+        margin-bottom: 7rem
+    }
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem
+}
+
+@media(min-width: 700px) {
+    .title {
+        font-size:5rem
+    }
+}
+
+.text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem
+}
+
+@media(min-width: 700px) {
+    .text {
+        font-size:3rem
+    }
+}
+
+@media(min-width: 700px) {
+    .about {
+        flex-direction:row
+    }
+}
+@media(min-width: 700px) {
+    .about__image-container {
+        flex:389px 1 0
+    }
+}
+
+.tech-skills__list {
+    list-style-type: disc;
+    -moz-columns: 2;
+    column-count: 2;
+    margin-left: 2rem
+}
+
+@media(min-width: 700px) {
+    .tech-skills__list {
+        -moz-columns:3;
+        column-count: 3
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 7rem 0
+}
+
+.social-list {
+    display: flex;
+    gap: 2rem;
+    margin: 0 0 1rem;
+    justify-content: center;
+    list-style: none
+}
+
+.social-list-icon {
+    color: var(--gray-800);
+    font-size: 2.6rem
+}
+
+.footer__social-list-icon:hover {
+    color: var(--primary)
+}
+
+.footer__copyright {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.header {
+    padding: 2rem 0
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--gray-800)
+}
+
+@media(min-width: 700px) {
+    .logo {
+        font-size:2.6rem
+    }
+}
+
+.logo:hover {
+    color: var(--primary)
+}
+
+.nav {
+    position: relative
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.blogCard {
+    display: inline-block
+}
+
+.blogCard:hover {
+    color: var(--primary)
+}
+
+.blogCard__title {
+    margin-bottom: 0
+}
+
+.blogCard__date {
+    font-size: 1.2rem
+}
+
+.posts__cardsContainer {
+    margin-top: 2rem
+}
+
+.blog {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem
+}
+
+.blog__title {
+    font-size: 2.4rem
+}
+
+@media(min-width: 700px) {
+    .blog__title {
+        font-size:3.4rem
+    }
+}
+
+.blog__postContent h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem
+}
+
+@media(min-width: 700px) {
+    .blog__postContent h2 {
+        font-size:3rem
+    }
+}
+
+.blog__postContent hr {
+    margin: 40px 0
+}
+
+.uses {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem
+}
+
+@media(min-width: 700px) {
+    .uses {
+        flex-direction:row
+    }
+}
+
+.uses__imageContainer {
+    flex: 50% 0 0
+}
+
+.uses__categoryTitle {
+    margin: 2rem 0 1rem
+}
